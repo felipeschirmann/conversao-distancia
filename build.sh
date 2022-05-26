@@ -6,4 +6,4 @@ sed "s/<python-version>/$PYTHON_VERSION/g" Dockerfile.template > Dockerfile
 docker build . -t convercao-distancia:v$APP_VERSION --no-cache
 
 # for run image uncomment below
-#docker run -d -p 8082:5000 convercao-distancia:v$APP_VERSION
+docker run -d -p 8080:5000 convercao-distancia:v$APP_VERSION
